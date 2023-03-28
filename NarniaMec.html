@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jobs.css">
+    <title>Calculadora da Mecânica</title>
+
+    <style>
+        body {
+            height: 100vh;
+            background-image: url('img/NADA\ HAVER.png');
+            background-position: 0px;
+            background-repeat: no-repeat;
+            background-size: 1370px 660px;
+
+        }
+    </style>
+    <style>
+        form {
+            width: 250px;
+            border: solid 1px #fff;
+        }
+    </style>
+    <style>
+        .container {
+            display: inline-block;
+            justify-content: bottom;
+            align-items: bottom;
+            position: absolute;
+            margin-left: -50%;
+            margin-top: 1.5%;
+        }
+
+        .elemento {
+            display: inline-block;
+            justify-content: bottom;
+            align-items: bottom;
+            margin: auto;
+            position: absolute;
+            margin-left: -30%;
+            margin-top: 1%;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div>
+        <h1 class="Novo">
+            Tabela de Preços
+        </h1>
+    </div>
+
+    <div class="container">
+
+        <div>
+            <h2 class="deco">
+                TUNAGEM
+            </h2>
+        </div>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset class="baby">
+                <input type="checkbox" name="infull" id="ifull" value="350000" onclick="updateOutput()"> <label
+                    for="ifull">Full Tuning </label> <br>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <div class="elemento">
+        <h2 class="sub-heading">
+            ESTÉTICA
+        </h2>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset class="baby">
+                <input type="checkbox" name="cor1" id="icor" value="10000" onclick="updateOutput()"> <label for="icor">
+                    Cor </label> <br>
+                <input type="checkbox" name="Roda" id="irub" value="10000" onclick="updateOutput()"> <label for="irub">
+                    Roda </label> <br>
+                <input type="checkbox" name="aerofolio" id="iaero" value="10000" onclick="updateOutput()"> <label
+                    for="iaero"> Aerofolio </label> <br>
+                <input type="checkbox" name="gaiola" id="igai" value="10000" onclick="updateOutput()"> <label
+                    for="igai"> Gaiola </label> <br>
+                <input type="checkbox" name="insufilm" id="insu" value="10000" onclick="updateOutput()"> <label
+                    for="insu" onclick="updateOutput()"> Insulfim </label> <br>
+                <input type="checkbox" name="parachoque" id="ipara" value="10000" onclick="updateOutput()"> <label
+                    for="ipara" onclick="updateOutput()"> Para-Choque </label> <br>
+                <input type="checkbox" name="adesivos" id="idev" value="10000" onclick="updateOutput()"> <label
+                    for="idev" onclick="updateOutput()"> Adesivos(Decal) </label> <br>
+                <input type="checkbox" name="paralama" id="ipar" value="10000" onclick="updateOutput()"> <label
+                    for="ipar" onclick="updateOutput()"> Para-Lama </label> <br>
+                <input type="checkbox" name="saias laterais" id="isai" value="10000" onclick="updateOutput()"> <label
+                    for="isai" onclick="updateOutput()"> Saias-Laterais </label> <br>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="element">
+        <h2 class="nunk">
+            ESTÉTICA
+        </h2>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset class="buba">
+                <input type="checkbox" name="buzina" id="ibuz" value="5000" onclick="updateOutput()"> <label for="ibuz">
+                    Buzina </label> <br>
+                <input type="checkbox" name="capo" id="icap" value="5000" onclick="updateOutput()"> <label for="icap">
+                    Capô </label> <br>
+                <input type="checkbox" name="escapamento" id="iescap" value="5000" onclick="updateOutput()"> <label
+                    for="iescap"> Escapamento </label> <br>
+                <input type="checkbox" name="teto" id="itet" value="5000" onclick="updateOutput()"> <label for="itet">
+                    Teto </label> <br>
+                <input type="checkbox" name="placa" id="ipla" value="5000" onclick="updateOutput()"> <label for="ipla">
+                    Placa </label> <br>
+                <input type="checkbox" name="cor da Roda" id="icrd" value="5000" onclick="updateOutput()"> <label
+                    for="icrd"> Cor da Roda </label> <br>
+                <input type="checkbox" name="fumaça" id="ifuma" value="5000" onclick="updateOutput()"> <label
+                    for="ifuma"> Fumaça </label> <br>
+                <input type="checkbox" name="painel" id="ipain" value="5000" onclick="updateOutput()"> <label
+                    for="ipain"> Painel </label> <br>
+                <br>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="jujuba">
+        <h2 class="jujubinha">
+            NEON E XENON
+        </h2>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <input type="checkbox" name="Xenon" id="ixe" value="25000" onclick="updateOutput()"> <label for="ixe">
+                    Xenon (Farol) </label> <br>
+                <input type="checkbox" name="Neon" id="ine" value="25000" onclick="updateOutput()"> <label for="ine">
+                    Neon </label> <br>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <div class="juju">
+        <h2 class="pos">
+            BLINDAGEM
+        </h2>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset class="gio">
+                <input type="checkbox" name="Blind" id="iblin" value="600000"> <label for="iblin"> Blindagem
+                    (MAX)</label> <br>
+                <input type="checkbox" name="Pneu" id="ipne" value="100000000"> <label for="ipne"> Pneu </label> <br>
+            </fieldset>
+        </form>
+    </div>
+
+
+    </div>
+
+    <script>
+        function updateOutput() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var output = "";
+            var sum = 0;
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    output += checkboxes[i].value + " ";
+                    sum += parseInt(checkboxes[i].value);
+                }
+            }
+            document.getElementById("output").value = sum;
+        }
+        function applyDiscount() {
+            var discountedTotal = total * 0.9;
+            document.getElementById("output").value = discountedTotal.toFixed(2);
+        }
+        function applyDiscount() {
+            var sum = parseInt(document.getElementById("output").value);
+            var discount = sum * 0.1;
+            var total = sum - discount;
+            document.getElementById("output").value = total;
+        }
+
+    </script>
+    <form class="tot">
+        <fieldset class="total">
+            <h6 class="total__title">
+                VALOR TOTAL
+            </h6>
+            <div class="total__input-wrapper">
+                <input type="text" id="output" class="total__input" readonly>
+                <button class="total__button" type="button" onclick="applyDiscount()">Aplicar desconto de 10%</button>
+            </div>
+        </fieldset>
+    </form>
+
+
+    <form class="ops">
+        <fieldset>
+            <label for="input1" class="mo">Motor</label>
+            <br>
+            <label for="lvl1">Level 1</label>
+            <input type="checkbox" name="cor1" id="lvl1" value="20000" onclick="updateOutput()"> <br>
+            <label for="lvl2">Level 2</label>
+            <input type="checkbox" name="cor1" id="lvl2" value="40000" onclick="updateOutput()"> <br>
+            <label for="lvl3">Level 3</label>
+            <input type="checkbox" name="cor1" id="lvl3" value="70000" onclick="updateOutput()"> <br>
+            <label for="lvl4">Level 4</label>
+            <input type="checkbox" name="cor1" id="lvl4" value="100000" onclick="updateOutput()">
+
+        </fieldset>
+    </form>
+    <form class="ops2">
+        <fieldset>
+            <label for="input1" class="tr">Transmissão</label>
+            <br>
+            <label for="lvl5">Level 1</label>
+            <input type="checkbox" name="cor1" id="lvl5" value="60000" onclick="updateOutput()"> <br>
+            <label for="lvl6">Level 2</label>
+            <input type="checkbox" name="cor1" id="lvl6" value="80000" onclick="updateOutput()"> <br>
+            <label for="lvl7">Level 3</label>
+            <input type="checkbox" name="cor1" id="lvl7" value="100000" onclick="updateOutput()"> <br>
+            <label for="lvl8">Level 4</label>
+            <input type="checkbox" name="cor1" id="lvl8" value="120000" onclick="updateOutput()"> <br>
+            <label for="lvl9">Level 5</label>
+            <input type="checkbox" name="cor1" id="lvl9" value="150000" onclick="updateOutput()">
+
+        </fieldset>
+    </form>
+    <form class="ops3">
+        <fieldset>
+            <label for="input1">Freio</label>
+            <br>
+            <label for="lvl10">Level 1</label>
+            <input type="checkbox" name="cor1" id="lvl10" value="20000" onclick="updateOutput()"> <br>
+            <label for="lvl11">Level 2</label>
+            <input type="checkbox" name="cor1" id="lvl11" value="40000" onclick="updateOutput()"> <br>
+            <label for="lvl12">Level 3</label>
+            <input type="checkbox" name="cor1" id="lvl12" value="60000" onclick="updateOutput()">
+
+        </fieldset>
+    </form>
+    <form class="ops4">
+        <fieldset>
+            <label for="input1">Suspensão</label>
+            <br>
+            <label for="lvl13">Level 1</label>
+            <input type="checkbox" name="cor1" id="lvl13" value="10000" onclick="updateOutput()"> <br>
+            <label for="lvl14">Level 2</label>
+            <input type="checkbox" name="cor1" id="lvl14" value="20000" onclick="updateOutput()"> <br>
+            <label for="lvl15">Level 3</label>
+            <input type="checkbox" name="cor1" id="lvl15" value="30000" onclick="updateOutput()"> <br>
+            <label for="lvl16">Level 4</label>
+            <input type="checkbox" name="cor1" id="lvl16" value="50000" onclick="updateOutput()"> <br>
+            <label for="lvl17">Level 5</label>
+            <input type="checkbox" name="cor1" id="lvl17" value="70000" onclick="updateOutput()">
+
+
+        </fieldset>
+    </form>
+    <form class="ops5">
+        <fieldset>
+
+            <label for="lvl18">Turbo</label>
+            <input type="checkbox" name="cor1" id="lvl18" value="50000" onclick="updateOutput()">
+
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+
+
+</html>
